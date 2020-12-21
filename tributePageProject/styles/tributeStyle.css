@@ -1,10 +1,5 @@
 html { 
-    background: url("https://i.ibb.co/8mzW3dH/wh-Tribute-Background1.jpg"), sandybrown;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-size: 10px;
   }
 body {
     display: grid;
@@ -13,12 +8,20 @@ body {
         "nav content"
         "footer footer";
     margin: 0;
+    font-size: 1.6rem;
     font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
     color: hsl(-128, 100%, 11%);
     background-color: rgba(135,135,135,.3);
+    background: url("https://i.ibb.co/8mzW3dH/wh-Tribute-Background1.jpg"), sandybrown;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 header {
-    display: none;
+    display: block;
     width: 20%;
     position: fixed;
     bottom: 0;
@@ -27,9 +30,9 @@ header {
     border-right: 1px solid rgba(200,200,200,.5);
     background-color: rgba(100, 100,100, .4);
 }
-@media (min-width: 800px) {
+@media (max-width: 800px) {
     header {
-        display: block;
+        display: none;
     }
 }
 nav {
@@ -55,15 +58,30 @@ a {
     color:hsl(172, 48%, 18%);
     font-size: 2em;
 }
+a:visited {
+    color:hsl(172, 48%, 35%);
+}
 footer#tribute-link {
     color:hsl(172, 48%, 18%);
+}
+footer#tribute-link:visited {
+    color:hsl(172, 48%, 35%);
+}
+#main {
+    grid-area: content;
 }
 h1#title {
     grid-area: head;
     margin-left: 20%;
     padding: 1em;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 4rem;
+}
+@media(max-width: 800px) {
+    h1#title {
+        margin-left: 0;
+        font-size: 3.5rem;
+    }
 }
 div#img-div {
     display: flex;
@@ -72,6 +90,11 @@ div#img-div {
     padding: 1em;
     background: linear-gradient(135deg, rgba(46,49,49,.7), rgba(200,200,200,.1));
     border: 1px solid rgba(255,255,255, .05);
+}
+@media (max-width: 800px) {
+    div#img-div {
+        margin-left: 0;
+    }
 }
 img#image {
     max-width: 100%;
@@ -83,10 +106,18 @@ p#img-caption {
     /* align-self: flex-end; */
     opacity: .7;
 }
+#tribute-info h2 {
+    text-align: center;
+}
 article#tribute-info {
     margin-left: 20%;
     padding: 1em;
-    line-height: 2em;
+    line-height: 1.6;
+}
+@media (max-width: 800px) {
+    article#tribute-info {
+        margin-left: 0;
+    }
 }
 footer {
     position: relative;

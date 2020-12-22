@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/surveyStyle.css">
 </head>
 <body>
     <main>
@@ -11,59 +12,95 @@
         <p id="description">Lorem ipsum dolor sit amet.</p>
 
         <form id="survey-form" action="#" method="GET">
-            <label id="name-label" for="name">Name</label>
-            <input id="name" type="text" placeholder="lorem ipsum dolor amet" required>
-
-            <label id="email-label" for="email">Email</label>
-            <input  id="email" type="email" name="" placeholder="lorem ipsum dolor amet" required>
-
-            <label id="number-label" for="number">Number</label>
-            <input id="number" type="number" min="10" max="100" placeholder="lorem ipsum dolor amet">
-
-            <label for="dropdown">Lorem ipsum dolor sit.</label>
-            <select name="options" id="dropdown">
-                <option value="val1">Option1</option>
-                <option value="val2">Option2</option>
-                <option value="val3">Option3</option>
-                <option value="val4">Option4</option>
-                <option value="val5">Option5</option>
-                <option value="val6">Option6</option>
-            </select>
-
-            <label for="rad1">Rad1</label>
-            <input type="radio" name="radios" id="rad1" value="rad1">
-
-            <label for="rad2">Rad2</label>
-            <input type="radio" name="radios" id="rad2" value="rad2">
-
-            <label for="rad3">Rad3</label>
-            <input type="radio" name="radios" id="rad3" value="rad3">
-
-            <label for="rad4">Rad4</label>
-            <input type="radio" name="radios" id="rad4" value="rad4">
-
-            <label for="rad5">Rad5</label>
-            <input type="radio" name="radios" id="rad5" value="rad5">
-
-            <label for="check1">Check1</label>
-            <input id="check1" type="checkbox" value="check1">
-
-            <label for="check2">Check2</label>
-            <input id="check2" type="checkbox" value="check2">
+            <div class="form-name-element">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="nameInput" placeholder="lorem ipsum dolor amet" required>
+            </div>
             
-            <label for="check3">Check3</label>
-            <input id="check3" type="checkbox" value="check3">
-
-            <label for="check4">Check4</label>
-            <input id="check4" type="checkbox" value="check4">
-
-            <label for="check5">Check5</label>
-            <input id="check5" type="checkbox" value="check5">
-
-            <label for="comments">any comments?</label>
-            <textarea name="" id="comments" cols="30" rows="10"></textarea>
-
-            <button id="submit" type="submit">Submit</button>
+            <div class="form-email-element">
+                <label id="email-label" for="email">Email</label>
+                <input  id="email" type="email" name="emailInput" placeholder="lorem ipsum dolor amet" required>
+            </div>
+            
+            <div class="form-number-element">
+                <label id="number-label" for="number">Number</label>
+                <input id="number" type="number" name="numberInput" min="10" max="100" placeholder="lorem ipsum dolor amet">
+            </div>
+            
+            <div class="form-dropdown-element">
+                <label for="dropdown">Lorem ipsum dolor sit.</label>
+                <select name="options" id="dropdown">
+                    <option value="val1">Option1</option>
+                    <option value="val2">Option2</option>
+                    <option value="val3">Option3</option>
+                    <option value="val4">Option4</option>
+                    <option value="val5">Option5</option>
+                    <option value="val6">Option6</option>
+                </select>
+            </div>
+            
+            <div class="form-radio-element">
+                <div class="radio-group">
+                    <input type="radio" name="radioInput" id="rad1">
+                    <label for="rad1">Rad1</label>
+                </div>
+                
+                <div class="radio-group">
+                    <input type="radio" name="radioInput" id="rad2" value="rad2">
+                    <label for="rad2">Rad2</label>
+                </div>
+                
+                <div class="radio-group">
+                    <input type="radio" name="radioInput" id="rad3" value="rad3">
+                    <label for="rad3">Rad3</label>
+                </div>
+                
+                <div class="radio-group">
+                    <input type="radio" name="radioInput" id="rad4" value="rad4">
+                    <label for="rad4">Rad4</label>
+                </div>
+                
+                <div class="radio-group">
+                    <input type="radio" name="radioInput" id="rad5" value="rad4">
+                    <label for="rad5">Rad5</label>
+                </div>
+            </div>
+            
+            <div class="form-checkbox-element">
+                <div class="check-group">
+                    <input id="check1" type="checkbox" name="check1Input">
+                    <label for="check1">Check1</label>
+                </div>
+                
+                <div class="check-group">
+                    <input id="check2" type="checkbox" value="check2" name="check2Input">
+                    <label for="check2">Check2</label>
+                </div>
+                
+                <div class="check-group">
+                    <input id="check3" type="checkbox" value="check3" name="check3Input">
+                    <label for="check3">Check3</label>
+                </div>
+                
+                <div class="check-group">
+                    <input id="check4" type="checkbox" value="check4" name="check4Input">
+                    <label for="check4">Check4</label>
+                </div>
+                
+                <div class="check-group">
+                    <input id="check5" type="checkbox" value="check5" name="check5Input">
+                    <label for="check5">Check5</label>
+                </div>  
+            </div>
+            
+            <div class="form-textarea-element">
+                <label for="comments">any comments?</label>
+                <textarea name="commentsInput" id="comments" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div class="form-element">
+                <button id="submit" type="submit">Submit</button>
+            </div>
         </form>
     </main>    
 </body>

@@ -1,0 +1,98 @@
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 300vh;
+}
+body {
+    font-size: 1.6rem;
+    position: relative;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: darkgreen;
+    display: flex;
+    padding: .2em 1em;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 1;
+}
+#nav-bar {
+    flex: 1 0 auto;
+}
+#header-img {
+    flex: 0 0 auto;
+}
+#nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    margin: 0 1.5em;
+}
+li a {
+    text-decoration: none;
+    color: orange;
+}
+main {
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+#submit, #email {
+    padding: 7px 12px;
+    font-size: 1.6rem;
+    border-radius: 0;
+    appearance: none;
+}
+#submit {
+    color: dodgerblue;
+    background-color:gold;
+    border: 1px solid transparent;
+}
+#email {
+    color: dodgerblue;
+    border: 1px solid goldenrod;
+    margin-right: .2em;
+}
+
+video {
+    margin-bottom: 2em;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    width: 100%;
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin: .5em;
+    background-color:rgb(110, 220, 20);
+}
+.product-image {
+    height: 100%;
+    background-color: rgb(66, 66, 212);
+}
+.product-image:hover {
+    height: 70%;
+}

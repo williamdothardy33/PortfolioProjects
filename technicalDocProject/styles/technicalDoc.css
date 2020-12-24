@@ -1,0 +1,44 @@
+html {
+    font-size: 10px;
+}
+body {
+    padding: 1em;
+    font-size: 1.6rem;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding: .5em;
+    font-size: 1.6rem;
+}
+@media (max-width: 450px) {
+    #navbar {
+        display: none;
+    }
+}
+#navbar ul {
+    margin: 2em 1em;
+    padding: 1em 1em;
+    list-style: none;
+
+}
+ul li {
+    margin-bottom: 1em;
+}
+li a {
+    text-decoration: none;
+}
+#main-doc {
+    padding: 1em;
+    height: 150vh;
+    margin-left: 210px;
+}
+@media(max-width: 450px) {
+    #main-doc {
+        margin-left: 0;
+    }
+}
+

@@ -1,0 +1,49 @@
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.6rem;
+    margin: 0;
+}
+#navbar {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: .5em 1em;
+}
+#navbar ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 2em;
+}
+li a {
+    text-decoration: none;
+}
+main {
+    margin-top: 200px;
+    padding: 1em;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+h1 {
+    margin-right: .2em;
+}
+#projects {
+    display: flex;
+}
+@media (max-width: 450px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+    }
+}

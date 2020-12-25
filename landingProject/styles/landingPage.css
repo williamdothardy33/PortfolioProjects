@@ -1,11 +1,15 @@
 html {
     font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 300vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    --color-take-action: #d9514eff;
+    --color-attention: #2da8d8ff;
+    --color-accent: #2a2b2dff;
 }
 body {
     font-size: 1.6rem;
-    position: relative;
+    margin: 0;
+    padding: 2rem 1rem;
 }
 #header {
     position: fixed;
@@ -13,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: darkgreen;
+    background-color: var(--color-accent);
     display: flex;
     padding: .2em 1em;
     justify-content: space-between;
@@ -38,9 +42,107 @@ ul li {
 }
 li a {
     text-decoration: none;
-    color: orange;
+    color: var(--color-attention);
+    font-size: 2rem;
 }
 main {
+    margin-top: 120px;
+    display: grid;
+    grid-template-areas: "headline headline"
+                         "subheadline subheadline"
+                         "hero ."
+                         "reel-in ."
+                         "benefits ."
+                         "products ."
+                         "footer footer";
+}
+h1 {
+    grid-area: headline;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+#sub-heading {
+    grid-area: subheadline;
+    text-align: center;
+    margin: .5em 0 2em 0;
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    grid-area: hero;
+    padding: 1em;  
+}
+video {
+    margin-bottom: 1em;
+    align-self: center;
+}
+#primary-testimonial {
+    margin: 0;
+    align-self: center;
+}
+#proof {
+    grid-area: reel-in;
+}
+#products {
+    grid-area: products
+}
+#benefit-list {
+    grid-area: benefits;
+}
+#call-to-action {
+    position: sticky;
+    top: 130px;
+    right: 0;
+    width: 250px;
+    border: 1px solid var(--color-accent);
+    padding: 1em .5em;
+}
+form header {
+    margin-bottom: 2.5em;
+}
+
+#form-email-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+}
+label {
+    margin-bottom: .2em;
+}
+input {
+    padding: .5em 2em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#call-to-action blockquote{
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+[type=submit] {
+    color: white;
+    padding: .5em 1em;
+    background-color: var(--color-take-action);
+    width: 100%;
+}
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-card {
+    margin: .3em;
+}
+footer {
+    grid-area: footer;
+}
+
+/*main {
     position: relative;
     top: 200px;
     display: flex;
@@ -122,4 +224,4 @@ video {
 }
 .product-image:hover {
     height: 70%;
-}
+}*/

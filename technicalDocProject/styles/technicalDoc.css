@@ -1,9 +1,15 @@
+body {
+    --color-background: #184A45FF;
+    --color-foreground: #B0B8B4FF;
+    --color-action: #FC766AFF;
+}
 html {
     font-size: 10px;
 }
 body {
     padding: 1em;
     font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;;
 }
 #navbar {
     position: fixed;
@@ -13,6 +19,7 @@ body {
     height: 100%;
     padding: .5em;
     font-size: 1.6rem;
+    background-color: var(--color-background);
 }
 @media (max-width: 450px) {
     #navbar {
@@ -25,11 +32,16 @@ body {
     list-style: none;
 
 }
+nav li {
+    border-bottom: 1px solid var(--color-action);
+    font-family: 'Roboto', sans-serif;
+}
 ul li {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 li a {
     text-decoration: none;
+    color: var(--color-foreground);
 }
 #main-doc {
     padding: 1em;
@@ -41,4 +53,19 @@ li a {
         margin-left: 0;
     }
 }
-
+section {
+    margin-bottom: 2em;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+pre {
+    white-space: pre-line;
+}
+header {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1px solid var(--color-action);
+    background-color: var(--color-action);
+}

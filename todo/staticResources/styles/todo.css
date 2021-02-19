@@ -1,0 +1,71 @@
+html {
+    font-size: 10px;  
+}
+body {
+    font-size: 1.6rem;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+#input {
+    margin-bottom: 6em;
+}
+
+input {
+    font-size: 1.5em;
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: .5em 1em;
+    border: none;
+    border-bottom: 1px solid darkslategray;
+}
+
+
+
+.todo_item {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 1em;
+    margin: .3em;
+}
+.todo_item span {
+    align-self: center;
+}
+.todo_item p {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.todo_item .close_button {
+    visibility: hidden;
+}
+.todo_item:hover {
+    background-color: lightgray;
+    color: crimson;
+}
+
+.todo_item:hover .close_button {
+    visibility: visible;
+}
+
+.close_button:hover {
+    transform: scale(1.2);
+}
+
+.completed {
+    color: rgba(0, 0, 0, .3);
+    text-decoration: line-through;
+}
+
+
